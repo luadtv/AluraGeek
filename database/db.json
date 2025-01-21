@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Laptop Notebook HP 350",
+      "price": "1300",
+      "image": "https://i5.walmartimages.com/asr/57bb38e9-90a1-4532-8f4b-0e76e4538846.b8710b156887abf438daa8aa6905b47d.jpeg",
+      "id": "1"
+    },
+    {
+      "id": "0431",
+      "name": "camara",
+      "price": "10000",
+      "image": "https://www.tiendacanon.com.mx/wcsstore/CMEXCatalogAssetStore/T7-EF-S18-55mm-250124_xl.jpg"
+    }
+  ]
+}

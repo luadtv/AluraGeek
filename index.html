@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="assets/icons/m.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>AluraGeek</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+      <body class="font-sans min-h-screen flex flex-col overflow-x-hidden">
+        <h1 class="font-title">AluraGeek</h1>
+      </body>
+
+    </header>
+    <main class="grid-container">
+        <!-- Sección de lista de productos -->
+        <section id="list-products" class="homeSide" data-product>
+            <div class="full-width">
+                <h2>Mis Productos</h2>
+            </div>
+            <!--Seccion de Cards-->
+        </section>
+        <!-- Sección de Form -->
+        <section class="registerSide">
+            <h2 class="full-width">
+                Registrar productos
+            </h2>
+            <form class="main__form" data-form>
+
+                <fieldset class="form__field">
+                    <label class="field__label" for="name">Nombre</label>
+                    <input
+                        name="name"
+                        id="name"
+                        class="full__field"
+                        type="text"
+                        placeholder="Escriba el nombre del producto"
+                        minlength="3"
+                        maxlength="100"
+                        required
+                        data-name
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="field__label" for="price">Precio $</label>
+                    <input
+                        name="price"
+                        id="price"
+                        class="full__field"
+                        type="number"
+                        placeholder="Ingrese el precio del producto en dólares"
+                        minlength="1"
+                        required
+                        data-price
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <fieldset class="form__field">
+                    <label class="field__label" for="image">URL de la imagen</label>
+                    <input
+                        name="image"
+                        id="image"
+                        class="full__field"
+                        type="url"
+                        placeholder="Ingrese la URL de la imagen"
+                        minlength="3"
+                        required
+                        data-image
+                    >
+                    <span class="error-message"></span>
+                </fieldset>
+                <div class="Form__article">
+                    <div class="Form__botones">
+                        <button
+                            value=""
+                            class="Form__boton"
+                            id="send"
+                            type="submit"
+                        >Registrar</button>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="Form__botones">
+                        <button
+                            value=""
+                            class="Form__boton"
+                            id="delete"
+                            type="submit"
+                        >Eliminar</button>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Sección de Footer -->
+    <footer class="bg-[linear-gradient(135deg,_#273e81_0%,_#0202b0_0%,_#2d53c8_50%,_#a5b2ff_90%,_#c4dcf9_100%)] text-second-text py-6 mt-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-sm font-medium mb-2">© 2025 AluraGeek</p>
+        <div class="flex justify-center space-x-6 mb-4">
+          <a href="https://www.instagram.com" class="text-second-text hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.facebook.com" class="text-second-text hover:text-white transition-colors">Facebook</a>
+          <a href="mailto:contacto@cafegano.com" class="text-second-text hover:text-white transition-colors">Contacto</a>
+        </div>
+        <p class="text-xs text-second-text">¡Disfruta del mejor, vende todo lo que quieras!</p>
+      </div>
+    </footer>
+    <script src="js/controllers/main.js" type="module"></script>
+    <script src="js/validators/formValidator.js" type="module"></script>
+</body>
+
+</html>
